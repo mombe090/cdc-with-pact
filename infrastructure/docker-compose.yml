@@ -28,7 +28,7 @@ services:
     build:
       context: jenkins
     ports:
-      - "8080:8080"
+      - "8085:8080"
       - "50000:50000"
     volumes:
       - "./jenkins/jenkins_home:/var/jenkins_home"
