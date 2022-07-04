@@ -23,7 +23,7 @@ import static org.mockito.Mockito.when;
 @Provider("user-service")
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 //pact_broker is the service name in docker-compose
-@PactBroker(host = "pact_broker", tags = "${pactbroker.tags:prod}")
+@PactBroker(host = "192.168.99.10", port = "8005", tags = "latest") //"${pactbroker.tags:prod}"
 public class GenericStateWithParameterContractTest {
 
     @LocalServerPort
