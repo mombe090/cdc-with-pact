@@ -24,7 +24,7 @@ pipeline {
       steps {
         sh "git checkout ${PROD_VERSION}"
       }
-    }
+    } 
 
     stage ('Run Contract Tests') {
       steps {
